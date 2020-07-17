@@ -1,0 +1,66 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/orders-be/src",
+  "monorepo": true,
+  "root": "apps/orders-be",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/orders-be/tsconfig.app.json"
+  },
+  "projects": {
+    "orders-be": {
+      "type": "application",
+      "root": "apps/orders-be",
+      "entryFile": "main",
+      "sourceRoot": "apps/orders-be/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/orders-be/tsconfig.app.json"
+      }
+    },
+    "order-management-service": {
+      "type": "application",
+      "root": "apps/order-management-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/order-management-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/order-management-service/tsconfig.app.json"
+      }
+    },
+    "organizations-service": {
+      "type": "application",
+      "root": "apps/organizations-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/organizations-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/organizations-service/tsconfig.app.json"
+      }
+    },
+    "fulfillment-service": {
+      "type": "application",
+      "root": "apps/fulfillment-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/fulfillment-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/fulfillment-service/tsconfig.app.json"
+      }
+    },
+    "customer-directory-service": {
+      "type": "application",
+      "root": "apps/customer-directory-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/customer-directory-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/customer-directory-service/tsconfig.app.json"
+      }
+    },
+    "gql-service": {
+      "type": "application",
+      "root": "apps/gql-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/gql-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gql-service/tsconfig.app.json"
+      }
+    }
+  }
+}
